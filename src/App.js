@@ -1,11 +1,15 @@
+import React, { useState } from 'react';
 import Parent from './parent';
-
+import CounterContext from './CounterContext';
 
 function App() {
+  let count = useState(0);
   return (
-    <div>
-      <Parent name='suleman' />
-    </div>
+    <CounterContext.Provider value={count}>
+      <div>
+        <Parent name='suleman' />
+      </div>
+    </CounterContext.Provider>
   );
 }
 
