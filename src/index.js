@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Parent from './parent';
 
+import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-    <Parent name='suleman'/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
