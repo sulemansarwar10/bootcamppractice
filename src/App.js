@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Parent from './parent';
 import CounterContext from './CounterContext';
+import Reducer from './CounterReducer';
 
 function App() {
   let count = useState(0);
